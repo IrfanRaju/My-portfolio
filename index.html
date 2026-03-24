@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of Irfan — Frontend / Web Developer" />
+  <title>Irfan • Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfZf8H7xP4R0mfQb8P2c2yXQF8G7Y6R9IY0Qk7QJX9m2P6sJwVx0z9IQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#home">Irfan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-3 reveal-on-scroll">Hi, I'm Irfan</h1>
+          <p class="lead text-white-50 mb-4 reveal-on-scroll" data-reveal-delay="100">I'm a <span id="typed-roles"
+              class="text-white typed-caret">Frontend Developer</span></p>
+          <div class="d-flex gap-3 reveal-on-scroll" data-reveal-delay="200">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane me-2"></i>Hire Me
+            </a>
+
+            <a href="IRFAN%20CV.pdf" class="btn btn-outline-light btn-lg btn-resume" download="IRFAN CV.pdf">
+              <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path d="M12 3a1 1 0 0 1 1 1v7.586l2.293-2.293a1 1 0 1 1 
+               1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 
+               1.414-1.414L11 11.586V4a1 1 0 0 1 1-1zM5 18a1 1 0 1 
+               1 0-2h14a1 1 0 1 1 0 2H5z" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+        </div>
+        <div class="col-lg-6 text-center">
+          <svg class="img-fluid hero-grunge shadow-lg reveal-on-scroll" data-reveal-delay="150" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid slice" role="img" aria-label="Profile / Hero">
+            <title>Profile / Hero</title>
+            <defs>
+              <filter id="grungeDisplace" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+              </filter>
+              <mask id="grungeCircleMask">
+                <g filter="url(#grungeDisplace)">
+                  <circle cx="50" cy="50" r="48" fill="#fff" />
+                </g>
+              </mask>
+            </defs>
+            <image href="img/irfan2.jpeg" x="0" y="0" width="100" height="100" mask="url(#grungeCircleMask)" />
+            <g class="grunge-stroke">
+              <g filter="url(#grungeDisplace)">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#ffffff" stroke-width="2" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section-padding bg-body-tertiary">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-5">
+          <img src="img/irfan.jpeg" class="img-fluid rounded-4 shadow-lg reveal-on-scroll" alt="Profile photo" />
+        </div>
+        <div class="col-md-7">
+          <h2 class="section-title reveal-on-scroll">About Me</h2>
+          <p class="lead text-secondary mb-4 reveal-on-scroll" data-reveal-delay="100">
+            I'm a passionate frontend developer focused on building clean, responsive, and accessible web experiences. I
+            love turning complex problems into simple, beautiful interfaces.
+          </p>
+          <p class="mb-4 reveal-on-scroll" data-reveal-delay="150">
+            I specialize in modern JavaScript, Bootstrap, and React, and I'm always learning new tools to improve
+            developer and user experience.
+          </p>
+          <a href="IRFAN%20CV.pdf" class="btn btn-primary btn-resume reveal-on-scroll" data-reveal-delay="200"
+            download="IRFAN CV.pdf">
+            <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M12 3a1 1 0 0 1 1 1v7.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 11.586V4a1 1 0 0 1 1-1zM5 18a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H5z" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 reveal-on-scroll">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-html5 fa-lg text-danger me-2"></i>
+              <span class="fw-semibold">HTML5</span>
+              <span class="ms-auto text-muted">95%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="HTML5" aria-valuenow="95" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="95"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-css3-alt fa-lg text-primary me-2"></i>
+              <span class="fw-semibold">CSS3</span>
+              <span class="ms-auto text-muted">90%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="CSS3" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="90"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-square-js fa-lg text-warning me-2"></i>
+              <span class="fw-semibold">JavaScript</span>
+              <span class="ms-auto text-muted">85%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="85"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-bootstrap fa-lg text-purple me-2"></i>
+              <span class="fw-semibold">Bootstrap</span>
+              <span class="ms-auto text-muted">90%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Bootstrap" aria-valuenow="90" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="90"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-react fa-lg text-info me-2"></i>
+              <span class="fw-semibold">React</span>
+              <span class="ms-auto text-muted">80%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="React" aria-valuenow="80" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="80"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-item reveal-on-scroll">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-brands fa-git-alt fa-lg text-danger me-2"></i>
+              <span class="fw-semibold">Git</span>
+              <span class="ms-auto text-muted">85%</span>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Git" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-progress="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section-padding bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 reveal-on-scroll">Projects</h2>
+      <div class="row g-4">
+        <!-- Project Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll">
+            <img src="img/DanimicCard.PNG" class="card-img-top" alt="Project 1" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dynamic card</h5>
+              <p class="card-text text-secondary">I built an 🛒 Add to Cart feature using HTML, CSS, and JavaScript.
+                It’s dynamic, responsive, and makes shopping easy and fun 🎉.</p>
+              <a href="https://www.linkedin.com/posts/muhammad-irfan-8b9671374_webdevelopment-coding-javascript-activity-7349649800889319424-wJPg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFylis0BQ0SIpeyj37sLAWlFVCihGN437PE"
+                class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll" data-reveal-delay="50">
+            <img src="img/fas1.PNG" class="card-img-top" alt="Project 2" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">E-commerce</h5>
+              <p class="card-text text-secondary">I developed an e-commerce website using HTML, CSS, Bootstrap, and React.js 🛍️.
+                It features product listings, a responsive design, and smooth user interaction ⚡.
+              </p>
+              <a href="https://www.linkedin.com/posts/muhammad-irfan-8b9671374_i-created-this-e-commerce-fashion-store-using-activity-7362727621501050880-LEVM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFylis0BQ0SIpeyj37sLAWlFVCihGN437PE"
+                class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll" data-reveal-delay="100">
+            <img src="img/port.PNG" class="card-img-top" alt="Project 3" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text text-secondary">I created a portfolio website using HTML, CSS, Bootstrap, and JavaScript.
+                It showcases my skills and projects in a clean, responsive, and interactive way.</p>
+              <a href="https://www.linkedin.com/posts/muhammad-irfan-8b9671374_i-created-this-portfolio-website-using-html-activity-7364228316121190401-ztE2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFylis0BQ0SIpeyj37sLAWlFVCihGN437PE"
+                class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll">
+            <img src="img/reg.PNG" class="card-img-top" alt="Project 4" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Wedding registration</h5>
+              <p class="card-text text-secondary">I developed a 💍 Wedding Registration website using HTML, CSS, Bootstrap, and JavaScript.
+                It features a responsive design with an elegant registration form for guests ✨.</p>
+              <a href="https://www.linkedin.com/posts/muhammad-irfan-8b9671374_i-designed-a-wedding-registration-website-activity-7364229153753088002-RRT4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFylis0BQ0SIpeyj37sLAWlFVCihGN437PE"
+                class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll" data-reveal-delay="50">
+            <img src="img/app.PNG" class="card-img-top" alt="Project 5" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Aqua Flow</h5>
+              <p class="card-text text-secondary">I developed the 💧 Aqua Flow app using React Native with a clean and modern design.
+                It helps users manage water flow efficiently with smooth navigation and features 📱.</p>
+              <a href="https://www.linkedin.com/posts/muhammad-irfan-8b9671374_i-developed-a-mobile-app-using-react-native-activity-7364526222434889729-2_tb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFylis0BQ0SIpeyj37sLAWlFVCihGN437PE"
+                class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100 shadow-sm reveal-on-scroll" data-reveal-delay="100">
+            <img src="https://picsum.photos/seed/p6/600/400" class="card-img-top" alt="Project 6" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project Six</h5>
+              <p class="card-text text-secondary">Responsive blog template with typography and image grids.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Optional) -->
+  <section id="testimonials" class="section-padding">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 reveal-on-scroll">Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide reveal-on-scroll" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <figure class="text-center px-5">
+              <blockquote class="blockquote">
+                <p>"Irfan delivers high-quality interfaces with attention to detail. Great collaborator!"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Sarah M., Product Manager
+              </figcaption>
+              <div class="text-warning mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="text-center px-5">
+              <blockquote class="blockquote">
+                <p>"Professional, responsive, and creative. The project was a success."</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Alex K., Founder
+              </figcaption>
+              <div class="text-warning mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="text-center px-5">
+              <blockquote class="blockquote">
+                <p>"Thoughtful UX and clean code. Highly recommend working with Irfan."</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Priya S., Designer
+              </figcaption>
+              <div class="text-warning mt-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </figure>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-padding bg-body-tertiary">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 reveal-on-scroll">Contact</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <form class="needs-validation reveal-on-scroll" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" required />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="How can I help?" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane me-2"></i>Send
+              Message</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 reveal-on-scroll" data-reveal-delay="100">
+            <h5 class="mb-3">Get in touch</h5>
+            <p class="text-secondary mb-4">I'm available for freelance work and open to new opportunities.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><i class="fa-solid fa-envelope me-2 text-primary"></i><a
+                  href="mailto:irfanraju@gmail.com"
+                  class="link-underline link-underline-opacity-0">irfanraju@gmail.com</a></li>
+              <li class="mb-2"><i class="fa-solid fa-phone me-2 text-primary"></i><a href="tel:+1234567890"
+                  class="link-underline link-underline-opacity-0">+923491059255</a></li>
+              <li class="mb-2"><i class="fa-solid fa-location-dot me-2 text-primary"></i>Islmabad , Pakistan</li>
+            </ul>
+            <div class="d-flex gap-3">
+              <a class="btn btn-outline-dark btn-icon" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+                aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                  role="img" aria-hidden="true">
+                  <path
+                    d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5Zm-9 19H7V9h3v10Zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76S7.53 4.2 8.5 4.2s1.75.79 1.75 1.76-.78 1.77-1.75 1.77ZM20 19h-3v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V19h-3V9h2.88v1.37h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.6 2.01 3.6 4.62V19Z" />
+                </svg>
+              </a>
+              <a class="btn btn-outline-dark btn-icon" href="https://github.com/" target="_blank" rel="noreferrer"
+                aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                  role="img" aria-hidden="true">
+                  <path
+                    d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.87 3.15 9 7.51 10.45.55.1.75-.24.75-.53 0-.26-.01-1.12-.02-2.03-3.06.67-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.61-1.22-1.61-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.67 2.58 1.19 3.21.9.1-.71.38-1.19.69-1.47-2.44-.28-5-1.22-5-5.43 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.41.11-2.95 0 0 .93-.3 3.05 1.13.88-.25 1.83-.37 2.77-.37.94 0 1.89.12 2.77.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.23 2.67.11 2.95.7.77 1.13 1.76 1.13 2.96 0 4.22-2.57 5.14-5.02 5.41.39.33.73.98.73 1.98 0 1.43-.01 2.59-.01 2.95 0 .29.2.64.75.53 4.36-1.45 7.5-5.58 7.5-10.45C23.1 5.33 18.27.5 12 .5Z" />
+                </svg>
+              </a>
+              <a class="btn btn-outline-dark btn-icon" href="https://twitter.com/" target="_blank" rel="noreferrer"
+                aria-label="X / Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                  role="img" aria-hidden="true">
+                  <path
+                    d="M17.19 2H20.5l-7.6 8.69L22 22h-6.8l-5.32-6.41L3.7 22H.38l8.15-9.32L2 2h6.91l4.79 5.82L17.19 2Zm-1.19 18h1.95L8.1 4H6.06l9.94 16Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center bg-dark text-white">
+    <div class="container small">
+      <div class="mb-2">
+        <a class="text-white-50 me-3" href="#home">Home</a>
+        <a class="text-white-50 me-3" href="#about">About</a>
+        <a class="text-white-50 me-3" href="#projects">Projects</a>
+        <a class="text-white-50" href="#contact">Contact</a>
+      </div>
+      <div class="mb-2">
+        <a class="text-white-50 me-2" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a class="text-white-50 me-2" href="https://github.com/" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-github"></i></a>
+        <a class="text-white-50" href="https://twitter.com/" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div>© <span id="year"></span> Irfan. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="btn btn-primary btn-back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Theme color switcher -->
+  <div class="theme-switcher shadow-sm" aria-label="Theme color picker">
+    <div class="theme-label">Theme</div>
+    <div class="swatches">
+      <button class="swatch" type="button" aria-label="Indigo" data-color="#6c5ce7" style="--sw:#6c5ce7"></button>
+      <button class="swatch" type="button" aria-label="Emerald" data-color="#10b981" style="--sw:#10b981"></button>
+      <button class="swatch" type="button" aria-label="Sky" data-color="#0ea5e9" style="--sw:#0ea5e9"></button>
+      <button class="swatch" type="button" aria-label="Rose" data-color="#f43f5e" style="--sw:#f43f5e"></button>
+      <button class="swatch" type="button" aria-label="Amber" data-color="#f59e0b" style="--sw:#f59e0b"></button>
+      <button class="swatch" type="button" aria-label="Violet" data-color="#8b5cf6" style="--sw:#8b5cf6"></button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
