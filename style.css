@@ -295,6 +295,7 @@ body {
 .project-card {
   transition: transform 220ms ease, box-shadow 220ms ease;
   border: none;
+   height: 400px;
   position: relative;
 }
 
